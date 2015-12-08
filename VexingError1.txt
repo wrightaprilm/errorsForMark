@@ -1,0 +1,16 @@
+/*    else if ( useScaling == true && nodeIndex % 4 != 0)
+    {
+        throw RbException("LOOK LOOK LOOK");
+
+        // iterate over all mixture categories
+        for (size_t site = 0; site < this->pattern_block_size ; ++site)
+        {
+            nodesActivePNSLSF.at(site) = this->perNodeSiteLogScalingFactors[this->activeLikelihood[left]][left][site] + this->perNodeSiteLogScalingFactors[this->activeLikelihood[right]][right][site];
+        }
+        
+    }
+*/
+}
+
+AbstractPhyloCTMCSiteHomo 1619
+ I'm a little stuck here. It seems that this clause and the previous are both always evaluated. I don't get why.

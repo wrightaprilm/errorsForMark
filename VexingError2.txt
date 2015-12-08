@@ -1,0 +1,13 @@
+==18648== 32 bytes in 1 blocks are definitely lost in loss record 1,639 of 2,827
+==18648==    at 0x102737881: malloc (vg_replace_malloc.c:302)
+==18648==    by 0x10283723D: operator new(unsigned long) (in /usr/lib/libc++abi.dylib)
+==18648==    by 0x1000EB714: RevLanguage::HomologousCharacterData::getCharacterDataMethods() const (RlHomologousCharacterData.cpp:24)
+==18648==    by 0x1001AE4D1: RevLanguage::AbstractHomologousDiscreteCharacterData::initMethods() (RlAbstractHomologousDiscreteCharacterData.cpp:448)
+==18648==    by 0x1001B00B0: RevLanguage::AbstractHomologousDiscreteCharacterData::AbstractHomologousDiscreteCharacterData(RevBayesCore::AbstractHomologousDiscreteCharacterData*) (RlAbstractHomologousDiscreteCharacterData.cpp:53)
+==18648==    by 0x1001B016C: RevLanguage::AbstractHomologousDiscreteCharacterData::AbstractHomologousDiscreteCharacterData(RevBayesCore::AbstractHomologousDiscreteCharacterData*) (RlAbstractHomologousDiscreteCharacterData.cpp:45)
+==18648==    by 0x1001941E6: RevLanguage::Func_readDiscreteCharacterData::execute() (Func_readDiscreteCharacterData.cpp:156)
+==18648==    by 0x100BF2EDD: RevLanguage::SyntaxFunctionCall::evaluateContent(RevLanguage::Environment&, bool) (SyntaxFunctionCall.cpp:195)
+==18648==    by 0x100269ED6: RevLanguage::SyntaxAssignment::evaluateContent(RevLanguage::Environment&, bool) (SyntaxAssignment.cpp:75)
+==18648==    by 0x10097583C: RevLanguage::Parser::execute(RevLanguage::SyntaxElement*, RevLanguage::Environment&) const (Parser.cpp:155)
+==18648==    by 0x1008CCE09: yyparse() (grammar.y:255)
+==18648==    by 0x100977203: RevLanguage::Parser::processCommand(std::string&, RevLanguage::Environment*) (Parser.cpp:448)
